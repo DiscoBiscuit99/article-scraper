@@ -1,0 +1,22 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello, world!</title>
+    </head>
+    <body>
+    <p>["Create a simple price farmer using rust"]</p>
+    <p>["Hi Folks! In this data driven world we need more and more data at hour fingertips. WebScraping is the broad field of programming that aims at fetching publicly available data from disparate sources so that we can combine them and do some number crunching of our own. I have a nostalgic feeling whenever the topic of webscraping comes up because this is how I learnt a lot of python programming which was one of the first languages that I had tried to learn and where I got some amount of success. Below is the link to the github repo on a naive stock prediction which I had done to generate stock tickers and which I use even today. Creating this github repo helped me a lot to go overcome some of my programming hurdles."]</p>
+    <p>["So we know that it is quite easy to do this in Python, but what about Rust. I had recently done some work in Rust where I have been working on a crate for unifying the file reading of files in various cloud service providers ahem<a work in progress>ahem. There I had made usage of the reqwest library, which is basically the counterpart of the python request library. Hence I know that it is fairly easy to get the response of any url."]</p>
+    <p>["Below is the code to get the response from any url. As a problem statement, I want to get the stock price of a company from the moneycontrol.com website. The company that I have chosen is ", "NTPC", "."]</p>
+    <p>["In the above code we are saying that we will use the ", "reqwest", " library and then pass the specific url to ", "reqwest::get", ". We are capturing the response in a mutable variable ", "resp", "."]</p>
+    <p>["Now that we have the response in the response variable we will need to parse it and get the specific ticket price. So to proceed we can use the scraper crate. I can pass a css selector to the scraper selector. Using chrome we see that the selector for the BSE price. Consider the below screenshot on how I am getting at the selector."]</p>
+    <p>["The selector comes out to be ", "#Bse_Prc_tick > strong", ". Now that I have the selector I can pass it to the Selector. Below is the code for getting the ticket price."]</p>
+    <p>["In the above code we pull in the Selector and Html modules. Then we convert the resp to text so that this can be passed to the parse_document from Html module. We also create a selector parsing the selector that we got from chrome using the Selector module. Finally it all comes together where we select from the fragment items based on the selector. This is defined as the price and we print the price. The price in this case comes out as the vector."]</p>
+    <p>["We ofcourse will need to put the code shown in this blog in proper constructs. You can follow this ", "github link", " to go to the code."]</p>
+    <p>["In case this post makes you interested in learning more about Rust, you can read the below book."]</p>
+    <p>["Thanks for reading this post. If you found this useful, please click on the claps button and share the post with your friends and colleagues."]</p>
+    <p>["Written by"]</p>
+    </body>
+    </html>
