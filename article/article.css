@@ -1,0 +1,25 @@
+html, body {
+    background-color: #2d2f2e;
+    color: #fffff9;
+
+    font-family: Times New Roman;
+
+    margin: 0;
+}
+
+.div-block {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+.div-block h1 {
+    text-align: center;
+    color: #ff926e;
+    margin: 2em;
+}
+
+.div-block p {
+    font-size: 16px;
+    text-align: justify;
+}

@@ -7,6 +7,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d663a8e9a99154b5fb793032533f6328da35e23aac63d5c152279aa8ba356825"
 
 [[package]]
+name = "article-scraber"
+version = "0.1.0"
+dependencies = [
+ "reqwest",
+ "scraper",
+ "tokio",
+]
+
+[[package]]
 name = "autocfg"
 version = "0.1.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1474,15 +1483,6 @@ checksum = "2d6f51648d8c56c366144378a33290049eafdd784071077f6fe37dae64c1c4cb"
 dependencies = [
  "js-sys",
  "wasm-bindgen",
-]
-
-[[package]]
-name = "webscraper"
-version = "0.1.0"
-dependencies = [
- "reqwest",
- "scraper",
- "tokio",
 ]
 
 [[package]]
